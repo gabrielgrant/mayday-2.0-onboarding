@@ -1,7 +1,9 @@
 # Onboarding
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+The Mayday onboarding process collects volunteers' info, connects them to their
+local rep and gets them registered for an orientation event.
+
+The rest of this README outlines the details of collaborating on this application.
 
 ## Prerequisites
 
