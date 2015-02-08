@@ -21,7 +21,8 @@ export default Ember.Controller.extend({
         // if no 
         //if (data.length == 1
         console.log(data);
-        self.transitionToRoute('call');
+        self.transitionToRoute('address');
+        //self.transitionToRoute('call');
       });
       
     }

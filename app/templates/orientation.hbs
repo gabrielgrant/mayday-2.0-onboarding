@@ -1,1 +1,13 @@
+Step Three. Join a citizen lobbying team by signing up for one of our upcoming online orientations.  At the session you’ll meet other volunteers and learn the ropes of our tools.
+
+<form {{action "next" on="submit"}}>
+{{view "select" content=model
+                optionLabelPath="content.prettyDate"
+                optionValuePath="content.id"
+                prompt="Select an orientation to attend:"
+                selection=selectedOrientation}}
+
+<button type="submit">Next</button>
+</form>
+
 {{outlet}}
