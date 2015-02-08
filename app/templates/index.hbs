@@ -1,1 +1,20 @@
+<p>
+  Step one: Identify congressional district
+</p>
+<p>
+  Please provide your zip code so we can check to see if you are in one of our target districts.
+</p>
+<form  {{action "next" on="submit"}}>
+{{#unless controllers.application.name}}
+  {{input placeholder="Name" value=name required=true}}
+{{/unless}}
+{{#unless controllers.application.email}}
+  {{input placeholder="Email" value=email required=true}}
+{{/unless}}
+
+{{input placeholder="ZIP Code" value=zip required=true}}
+
+<button type="submit">Next</button>
+</form>
+
 {{outlet}}
