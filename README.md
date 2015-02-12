@@ -45,6 +45,12 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 This app is currently automatically deployed to http://mayday-onboarding.s3-website-us-east-1.amazonaws.com/ by Travis CI.
 
+## License
+
+This project is open source under the [Apache License 2.0](LICENSE).
+
+Note that while this license allows code reuse, it does not permit reuse of Mayday PAC branding or logos. If you reuse this project, you may need to remove Mayday PAC branding from the source code.
+
 ## Further Reading / Useful Links
 
 * [ember.js](http://emberjs.com/)
