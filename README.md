@@ -1,5 +1,7 @@
 # Onboarding
 
+[![Build Status](https://travis-ci.org/MayOneUS/mayday-2.0-onboarding.svg)](https://travis-ci.org/MayOneUS/mayday-2.0-onboarding)
+
 The Mayday onboarding process collects volunteers' info, connects them to their
 local rep and gets them registered for an orientation event.
 
@@ -44,6 +46,8 @@ Make use of the many generators for code, try `ember help generate` for more det
 ### Deploying
 
 This app is currently automatically deployed to http://mayday-onboarding.s3-website-us-east-1.amazonaws.com/ by Travis CI.
+
+You can see the build details and history here: https://travis-ci.org/MayOneUS/mayday-2.0-onboarding
 
 ## License
 
