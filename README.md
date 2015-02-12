@@ -43,7 +43,7 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Deploying
 
-Specify what it takes to deploy your app.
+This app is currently automatically deployed to http://mayday-onboarding.s3-website-us-east-1.amazonaws.com/ by Travis CI.
 
 ## Further Reading / Useful Links
 

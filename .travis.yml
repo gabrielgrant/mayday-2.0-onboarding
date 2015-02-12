@@ -1,20 +1,25 @@
----
 language: node_js
-
 sudo: false
-
 cache:
   directories:
-    - node_modules
-
+  - node_modules
 before_install:
-  - "npm config set spin false"
-  - "npm install -g npm@^2"
-
+- npm config set spin false
+- npm install -g npm@^2
 install:
-  - npm install -g bower
-  - npm install
-  - bower install
-
+- npm install -g bower
+- npm install
+- bower install
 script:
-  - npm test
+- echo "When we have tests, we will run 'npm test'"
+before_deploy: ember build --environment production
+deploy:
+  provider: s3
+  access_key_id: AKIAJSFSM4MOEIIQYVUA
+  secret_access_key:
+    secure: SK6CmPKydaD+5S7IIrjjvIkfemvgSsnYFMdB+Cy8dPcgj4K/MzSlhuu6FOgaBpdphP9TI18VsnMirvovUj2lMUMVxGENsLQbcM9qoPCrcZBBLXI2OJWr0LjquOoFWyhs10n2oycgNNI5O/cdEGgJvNQ8yRTaft8OGnVXgNvo51k=
+  bucket: mayday-onboarding
+  skip_cleanup: true
+  local-dir: dist/
+  on:
+    repo: MayOneUS/mayday-2.0-onboarding
