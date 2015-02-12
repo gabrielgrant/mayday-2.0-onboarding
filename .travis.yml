@@ -12,12 +12,11 @@ install:
 - bower install
 script:
 - echo "When we have tests, we will run 'npm test'"
-before_deploy: ember build --environment production
 deploy:
   provider: s3
   access_key_id: AKIAJSFSM4MOEIIQYVUA
   secret_access_key:
-    secure: SK6CmPKydaD+5S7IIrjjvIkfemvgSsnYFMdB+Cy8dPcgj4K/MzSlhuu6FOgaBpdphP9TI18VsnMirvovUj2lMUMVxGENsLQbcM9qoPCrcZBBLXI2OJWr0LjquOoFWyhs10n2oycgNNI5O/cdEGgJvNQ8yRTaft8OGnVXgNvo51k=
+    secure: BWflqgKqpBiktDS3XQFOM86FnP0JSnxHWNLGTCQ4R/FWBaAinfZ6hW050QwIKvqWk1Y4xacF1k8ngLjNocVUB1l6n5W1luGcoM8YQrNLUYf5XOVkuDlIXAdactt97N3PuB2QY+HdkXByq1KdycFHbY0e3xbwALX63ReSGKLt+UQ=
   bucket: mayday-onboarding
   skip_cleanup: true
   local-dir: dist/
