@@ -23,3 +23,6 @@ deploy:
   local-dir: dist/
   on:
     repo: MayOneUS/mayday-2.0-onboarding
+notifications:
+  slack:
+    secure: KIYkKTcdhRo8URffY7wZf79azR504i0S18861bv/lzY82V+GH+CXORo9xu9hG+Rqb6tXgIelL+fKhLoHPBaFIBN/K1IRTaJIxat2FaMvSNUpImiKf+RESqdJrrEnxQsE+rztKXmksiTrZqXh1/nkVT6D0QHWfA82DvULTe5640g=
