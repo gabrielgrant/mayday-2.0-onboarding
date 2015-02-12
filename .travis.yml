@@ -12,6 +12,7 @@ install:
 - bower install
 script:
 - echo "When we have tests, we will run 'npm test'"
+before_deploy: ember build --environment production
 deploy:
   provider: s3
   access_key_id: AKIAJSFSM4MOEIIQYVUA
