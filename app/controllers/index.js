@@ -15,16 +15,16 @@ export default Ember.Controller.extend({
       var data = {
         apikey: '65b4c5e0e363435790291c0c76067cce',
         zip: this.get('zip')
-      }
+      };
       var self = this;
       $.getJSON(url, data).then(function(data){
-        // if no 
+        // if no
         //if (data.length == 1
         console.log(data);
         self.transitionToRoute('address');
         //self.transitionToRoute('call');
       });
-      
+
     }
   }
 });
