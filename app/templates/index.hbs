@@ -12,7 +12,9 @@
   {{input placeholder="Email" value=email required=true}}
 {{/unless}}
 
-{{input placeholder="ZIP Code" value=zip required=true}}
+{{#unless controllers.application.zip}}
+  {{input placeholder="ZIP Code" value=zip required=true}}
+{{/unless}}
 
 <button type="submit">Next</button>
 </form>
