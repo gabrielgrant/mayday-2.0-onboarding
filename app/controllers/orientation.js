@@ -4,7 +4,7 @@ export default Ember.Controller.extend({
   actions: {
     next: function(){
       console.log('save orientation choice');
-      this.transitionToRoute('social');
+      this.transitionToRoute('address');
     }
   }
 });
