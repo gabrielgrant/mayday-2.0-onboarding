@@ -10,12 +10,14 @@ export default Ember.Controller.extend({
       if (this.get('email')){
         this.set('controllers.application.email', this.get('email'));
       }
-      this.set('controllers.application.zip', this.get('zip'));
+      if (this.get('zip')){
+        this.set('controllers.application.zip', this.get('zip'));
+      }
       var url = 'https://congress.api.sunlightfoundation.com/districts/locate';
       var data = {
         apikey: '65b4c5e0e363435790291c0c76067cce',
-        zip: this.get('zip')
-      }
+        zip: this.get('controllers.application.zip')
+      };
       var self = this;
       $.getJSON(url, data).then(function(data){
         // if no 
