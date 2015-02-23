@@ -9,6 +9,6 @@ export default Ember.Route.extend({
       {id: 4, prettyDate: 'Fri, Feb 20 @ 7pm PST'},
       {id: 5, prettyDate: 'Sat, Feb 21 @ 7pm PST'},
       {id: 6, prettyDate: 'Sun, Feb 22 @ 7pm PST'}
-    ]
+    ];
   }
 });
