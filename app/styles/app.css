@@ -24,7 +24,7 @@ body {
   width: 100%;
 }
 
-div.ember-view {
+#application-wrapper {
   padding: 75px 15px 15px 15px;
   background-color: #e0e1e3;
   position: relative;
@@ -52,3 +52,4 @@ button[type=submit] {
   padding: 10px 5px;
   width: 100%;
 }
+
