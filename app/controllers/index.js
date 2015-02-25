@@ -19,7 +19,7 @@ export default Ember.Controller.extend({
         zip: this.get('controllers.application.zip')
       };
       var self = this;
-      $.getJSON(url, data).then(function(data){
+      Ember.$.getJSON(url, data).then(function(data){
         // if no 
         //if (data.length == 1
         console.log(data);
