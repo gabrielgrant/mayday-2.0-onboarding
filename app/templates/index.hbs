@@ -13,7 +13,7 @@
 {{/unless}}
 
 {{#unless controllers.application.zip}}
-  {{input type="number" placeholder="ZIP Code" value=zip required=true}}
+  {{input type="tel" placeholder="ZIP Code" value=zip required=true pattern="[0-9]{5}" maxlength="5"}}
 {{/unless}}
 
 <button type="submit">Next</button>
