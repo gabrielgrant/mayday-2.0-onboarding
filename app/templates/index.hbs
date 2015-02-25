@@ -9,11 +9,11 @@
   {{input placeholder="Name" value=name required=true}}
 {{/unless}}
 {{#unless controllers.application.email}}
-  {{input placeholder="Email" value=email required=true}}
+  {{input type="email" placeholder="Email" value=email required=true}}
 {{/unless}}
 
 {{#unless controllers.application.zip}}
-  {{input placeholder="ZIP Code" value=zip required=true}}
+  {{input type="number" placeholder="ZIP Code" value=zip required=true}}
 {{/unless}}
 
 <button type="submit">Next</button>
