@@ -5,9 +5,8 @@ body {
   font-family: Lato, sans-serif;
   margin: 0;
   padding: 0;
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  transform-style: preserve-3d;
+  display: table;
+  width: 100%;
   height: 100%;
 }
 
@@ -16,22 +15,23 @@ body {
   color: #fff;
   display: block;
   margin: 0;
-  padding: 25px 0;
-  position: absolute;
-  top: 0;
-  left: 0;
+  padding: 25px 15px;
   text-align: center;
   width: 100%;
+  position: relative;
+  top: -15px;
+  left: -15px;
 }
 
 #application-wrapper {
-  padding: 75px 15px 15px 15px;
+  display: table-cell;
+  vertical-align: middle;
+  margin: 0;
+}
+
+#application-wrapper div.ember-view {
   background-color: #e0e1e3;
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  padding: 15px 15px 1px 15px;
 }
 
 input {
@@ -48,8 +48,52 @@ button[type=submit] {
   color: #fff;
   display: block;
   font-size: 100%;
-  margin: 15px 0;
   padding: 10px 5px;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+
+
+.firstName {
+  float: left;
+  width: 45%;
+}
+
+.lastName {
+  float: right;
+  width: 45%;
+}
+
+.selectOrientation {
+  margin-top: 15px;
+  clear: both;
   width: 100%;
 }
 
+.signUp {
+  clear: both;
+  margin-top: 15px;
+}
+
+.remindLater {
+  border: 2px #0d375d solid;
+  border-radius: 5px;
+  display: block;
+  font-size: 100%;
+  text-transform: uppercase;
+}
+
+.remindLater a:link,
+.remindLater a:active,
+.remindLater a:visited {
+  padding: 10px 5px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #0d375d;
+}
+
+.skipThis {
+  text-align: center;
+}
