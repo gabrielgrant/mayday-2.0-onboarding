@@ -10,6 +10,12 @@ body {
   height: 100%;
 }
 
+a:link,
+a:active,
+a:visited {
+  color: #0e3860;
+}
+
 #title {
   background-color: #0d3960;
   color: #fff;
@@ -34,14 +40,21 @@ body {
   padding: 15px 15px 1px 15px;
 }
 
+form {
+  text-align: center;
+}
+
 input {
+  background-color: #eaeaea;
   border: 1px #0d3960 solid;
   border-radius: 5px;
   font-size: 100%;
   padding: 5px;
+  width: 75%
 }
 
 button[type=submit] {
+  margin: 15px 0;
   background-color: #b0010e;
   border: 1px #b0010e solid;
   border-radius: 5px;
@@ -53,28 +66,38 @@ button[type=submit] {
   text-transform: uppercase;
 }
 
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #449254;
+  /* todo: background image for the arrow */
+  border: 1px #449254 solid;
+  border-radius: 5px;
+  color: #fff;
+  display: block;
+  font-size: 16px; /* cannot be set lower or causes iOS zoom */
+  padding: 10px;
+  height: 40px;
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+}
 
-/* orientation page */
+/* 
+ * /orientation 
+ */
 
 .firstName {
   float: left;
   width: 45%;
+  margin-bottom: 15px;
 }
 
 .lastName {
   float: right;
   width: 45%;
-}
-
-.selectOrientation {
-  margin-top: 15px;
-  clear: both;
-  width: 100%;
-}
-
-.signUp {
-  clear: both;
-  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .remindLater {
@@ -88,13 +111,23 @@ button[type=submit] {
 .remindLater a:link,
 .remindLater a:active,
 .remindLater a:visited {
-  padding: 10px 5px;
+  padding: 10px 0;
   display: block;
   width: 100%;
   text-align: center;
   color: #0d375d;
+  text-decoration: none;
 }
 
-.skipThis {
+.secondary {
   text-align: center;
+}
+
+
+/* 
+ * /address 
+ */
+
+.checkAddress {
+  margin: 15px 0;
 }
