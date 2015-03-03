@@ -15,10 +15,11 @@ script:
 before_deploy: ember build --environment production
 deploy:
   provider: s3
-  access_key_id: AKIAJSFSM4MOEIIQYVUA
+  access_key_id:
+    secure: j4CbKxD4MAq28K3SZLf3V2Jo23+RSjfBKAamFiph0YZmnrtlagNe97QfsSKR+qgo4H/U7xKEHRe5AGKmTygkqhriDHYCJJYqpF+MQKFsKZhKfRnlcghCurf/+93gXA2XgJ8ui3Rn7t52F5KsTRkJYHE5KbqVn9m0H7nvvpg4cLc=
   secret_access_key:
-    secure: BWflqgKqpBiktDS3XQFOM86FnP0JSnxHWNLGTCQ4R/FWBaAinfZ6hW050QwIKvqWk1Y4xacF1k8ngLjNocVUB1l6n5W1luGcoM8YQrNLUYf5XOVkuDlIXAdactt97N3PuB2QY+HdkXByq1KdycFHbY0e3xbwALX63ReSGKLt+UQ=
-  bucket: mayday-onboarding
+    secure: TTft7fFvis7fAl/WV7lYOGYwpIuHy+nOx7iVFEnl/43s3eSyM9pXmHzumXA212wBpLh3LUyumC3xjK+7TLYT6gjLyn94SHVgdvd1Dc0AVNLbUydh2M5CD6RMhLX0AdpzBdtTTncekoZLmdhc44AEy5T7r8riHen8RKmAfTRckKc=
+  bucket: mayday-onboarding-staging
   skip_cleanup: true
   local-dir: dist/
   on:
