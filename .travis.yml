@@ -19,7 +19,7 @@ deploy:
     secure: j4CbKxD4MAq28K3SZLf3V2Jo23+RSjfBKAamFiph0YZmnrtlagNe97QfsSKR+qgo4H/U7xKEHRe5AGKmTygkqhriDHYCJJYqpF+MQKFsKZhKfRnlcghCurf/+93gXA2XgJ8ui3Rn7t52F5KsTRkJYHE5KbqVn9m0H7nvvpg4cLc=
   secret_access_key:
     secure: TTft7fFvis7fAl/WV7lYOGYwpIuHy+nOx7iVFEnl/43s3eSyM9pXmHzumXA212wBpLh3LUyumC3xjK+7TLYT6gjLyn94SHVgdvd1Dc0AVNLbUydh2M5CD6RMhLX0AdpzBdtTTncekoZLmdhc44AEy5T7r8riHen8RKmAfTRckKc=
-  bucket: mayday-onboarding-staging
+  bucket: onboarding-staging.mayday.us
   skip_cleanup: true
   local-dir: dist/
   on:
