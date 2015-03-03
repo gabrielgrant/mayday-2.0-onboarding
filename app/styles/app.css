@@ -100,6 +100,10 @@ select {
   margin-bottom: 15px;
 }
 
+.selectOrientation {
+  clear: both;
+}
+
 .remindLater {
   border: 2px #0d375d solid;
   border-radius: 5px;
