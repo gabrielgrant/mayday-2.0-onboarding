@@ -45,7 +45,7 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Deploying
 
-This app is currently automatically deployed to http://mayday-onboarding.s3-website-us-east-1.amazonaws.com/ by Travis CI.
+This app is currently automatically deployed to http://mayday-onboarding-staging.s3-website-us-east-1.amazonaws.com/ by Travis CI.
 
 You can see the build details and history here: https://travis-ci.org/MayOneUS/mayday-2.0-onboarding
 
