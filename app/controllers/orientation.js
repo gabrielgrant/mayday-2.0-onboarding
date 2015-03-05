@@ -17,9 +17,12 @@ export default Ember.Controller.extend({
       var url = 'https://mayone-staging.herokuapp.com/events/create_rsvp.json';
       var self = this;
       self.transitionToRoute('loading');
-      Ember.$.post(url, data).then(function(data){
+      Ember.$.post(url, data, null, 'text').then(function(data){
         console.log('Orientation choice saved', data);
         self.transitionToRoute('call');
+      }).fail(function(){
+        console.log('Orientation choice save failed', arguments);
+        self.transitionToRoute('error');
       });
     }
   }
