@@ -7,13 +7,14 @@ export default Ember.Route.extend({
       email: Ember.get(this.modelFor('application'), 'email'),
       address: Ember.get(this.modelFor('application'), 'address'),
       zip: Ember.get(this.modelFor('application'), 'zip'),
-    }
+    };
     var Legislator = Ember.Object.extend({
       displayLine: function(){
-        if (this.get('chamber') == 'house'){
-          var title = 'Rep.';
+        var title;
+        if (this.get('chamber') === 'house'){
+          title = 'Rep.';
         } else {
-          var title = 'Sen.';
+          title = 'Sen.';
         }
         var suffix = [this.get('party'), this.get('state_abbrev')].join(' - ');
         if (this.get('district_code')){
