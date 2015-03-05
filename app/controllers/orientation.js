@@ -12,7 +12,7 @@ export default Ember.Controller.extend({
           last_name: this.get('lastName')
         },
         event_id: this.get('selectedOrientation.id')
-      }
+      };
       console.log('saving orientation choice', data);
       var url = 'https://mayone-staging.herokuapp.com/events/create_rsvp.json';
       var self = this;
