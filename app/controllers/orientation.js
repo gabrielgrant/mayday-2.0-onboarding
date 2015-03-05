@@ -20,6 +20,9 @@ export default Ember.Controller.extend({
       Ember.$.post(url, data, null, 'text').then(function(data){
         console.log('Orientation choice saved', data);
         self.transitionToRoute('call');
+      }).fail(function(){
+        console.log('Orientation choice save failed', arguments);
+        self.transitionToRoute('error');
       });
     }
   }
