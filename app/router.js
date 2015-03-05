@@ -16,6 +16,7 @@ Router.map(function() {
 
   this.route("orientation");
   this.route("social");
+  this.route("error");
 });
 
 export default Router;
