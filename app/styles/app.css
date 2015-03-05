@@ -16,7 +16,9 @@ a:visited {
   color: #0e3860;
 }
 
-#title {
+header {
+  font-size: 1.5em;
+  font-weight: bold;
   background-color: #0d3960;
   color: #fff;
   display: block;
