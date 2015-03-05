@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model: function(){
-    var url = 'https://mayone-staging.herokuapp.com/legislators';
+    var url = 'https://mayone-staging.herokuapp.com/people/targets';
     var data = {
       email: Ember.get(this.modelFor('application'), 'email'),
       address: Ember.get(this.modelFor('application'), 'address'),
