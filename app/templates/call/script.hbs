@@ -1,18 +1,28 @@
-<p>We’re connecting you now, just answer the incoming call we placed to the phone number you provided and you’ll be connected with Sen. Starr’s office.</p>
-
-<p>Once connected, introduce yourself as a constituent and Mayday volunteer, then ask if Rep. Starr will support campaign finance reform.  Here are some suggested talking points:</p>
+<p>We&rsquo;re calling you now. Answer your phone and we&rsquo;ll start connecting you to the following reps&rsquo; offices:</p>
 
 <ul>
-<li>Talking point one</li>
-<li>Talking point two</li>
-<li>Talking point three</li>
+  {{#each rep in model.target_legislators}}
+    <li>
+      {{#if rep.local}}Your local{{/if}}
+      {{rep.displayLine}}
+    </li>
+  {{/each}}
 </ul>
 
+<p>When a staffer or answering machine picks up, be polite and let them know:</p>
+
+<ul>
+  <li>I am a registered voter (in your state or district, if applicable)</li>
+  <li>I support fundamental reform to end the corrupting influence of special interest money on elections</li>
+  <li>Will you cosponsor one of the bills to end corruption?</li>
+</ul>
+
+<p>When finished with one call, press * on your phone to be connected to the next rep. If you're accidentally disconnected, click below and we'll call you back:</p>
+
+<p class="remindLater" {{action "reconnect"}}><a href="#">Reconnect me</a></p>
 
 <form {{action "next" on="submit"}}>
-{{input placeholder="How did they respond?"}}
-
-<button type="submit">Continue</button>
+  <button type="submit">I'm done calling!</button>
 </form>
 
 {{outlet}}

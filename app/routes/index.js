@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  beforeModel: function() {
-    this.transitionTo('orientation');
+  beforeModel: function(transition) {
+    this.transitionTo('orientation', {queryParams: transition.queryParams});
   }
 });
