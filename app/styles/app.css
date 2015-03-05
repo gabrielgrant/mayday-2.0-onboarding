@@ -71,13 +71,15 @@ select {
   -webkit-appearance: none;
   appearance: none;
   background-color: #449254;
-  /* todo: background image for the arrow */
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAoCAMAAACo9wirAAAAYFBMVEVgom3///9Gk1ZFklW618BIlVhLlluu0LW007vL4c+31b3J381JlVnG3svR5NWEt47O4tLD3MhIlFdMl1uqzbHT5denzK+kyqxEkVREklS82MGx0ri+2cSx0be718G+2cO1O2/xAAAAfElEQVR42u2SVw6AMAxDcUPLpuw97n9LlgSoQA8A5Cex9D5sK4ZR6+cHvgzIMTnLpJMKMCDmh+IxGgVgJoKd4AFMpnpgLjx/O30PLruaJBuOWA7hwKa7FNQimgkRoaf7mGQhTNMQFj32kCHPkemKKoBC32RZrqv6P+pdwAQUF3SzOG6XwQAAAABJRU5ErkJggg==);
+  background-position: right 13px center;
+  background-repeat: no-repeat;
   border: 1px #449254 solid;
   border-radius: 5px;
   color: #fff;
   display: block;
   font-size: 16px; /* cannot be set lower or causes iOS zoom */
-  padding: 10px;
+  padding: 10px 50px 10px 10px;
   height: 40px;
   width: 100%;
   text-transform: uppercase;
