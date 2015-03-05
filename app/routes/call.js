@@ -8,10 +8,29 @@ export default Ember.Route.extend({
       address: Ember.get(this.modelFor('application'), 'address'),
       zip: Ember.get(this.modelFor('application'), 'zip'),
     }
-    return Ember.$.getJSON(url, data);
+    var Legislator = Ember.Object.extend({
+      displayLine: function(){
+        if (this.get('chamber') == 'house'){
+          var title = 'Rep.';
+        } else {
+          var title = 'Sen.';
+        }
+        var suffix = [this.get('party'), this.get('state_abbrev')].join(' - ');
+        if (this.get('district_code')){
+          suffix = [suffix, 'District', this.get('district_code')].join(' ');
+        }
+        return [title, this.get('name'), '(' + suffix + ')'].join(' ');
+      }.property('name', 'state_abbrev', 'chamber', 'party', 'district_code')
+    });
+    return Ember.$.getJSON(url, data).then(function(data){
+      console.log(data);
+      data.target_legislators = data.target_legislators.map(function(d){
+        return Legislator.create(d);
+      });
+      return data;
+    });
   },
   afterModel: function(model){
-    console.log(model);
     if (model.address_required){
       this.transitionTo('address');
     }
