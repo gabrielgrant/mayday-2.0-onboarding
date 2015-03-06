@@ -10,6 +10,7 @@ export default Ember.Controller.extend({
         email: this.get('controllers.application.model.email'),
         phone: this.get('controllers.application.model.phone')
       };
+      var self = this;
       Ember.$.post(url, data).fail(function(){
         console.log('Connecting call failed', arguments);
         self.transitionToRoute('error');
